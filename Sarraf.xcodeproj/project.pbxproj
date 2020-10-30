@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		83412C572549CDE900D14DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C562549CDE900D14DA7 /* AppDelegate.swift */; };
 		83412C592549CDE900D14DA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C582549CDE900D14DA7 /* SceneDelegate.swift */; };
-		83412C5B2549CDE900D14DA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C5A2549CDE900D14DA7 /* ViewController.swift */; };
 		83412C5E2549CDE900D14DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83412C5C2549CDE900D14DA7 /* Main.storyboard */; };
 		83412C602549CDEA00D14DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83412C5F2549CDEA00D14DA7 /* Assets.xcassets */; };
 		83412C632549CDEA00D14DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83412C612549CDEA00D14DA7 /* LaunchScreen.storyboard */; };
+		83412C7B2549EBFE00D14DA7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C7A2549EBFE00D14DA7 /* MainController.swift */; };
+		83412C832549F03200D14DA7 /* Shabnam-Thin-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83412C7E2549F03200D14DA7 /* Shabnam-Thin-FD.ttf */; };
+		83412C842549F03200D14DA7 /* Shabnam-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83412C7F2549F03200D14DA7 /* Shabnam-FD.ttf */; };
+		83412C852549F03200D14DA7 /* Shabnam-Light-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83412C802549F03200D14DA7 /* Shabnam-Light-FD.ttf */; };
+		83412C862549F03200D14DA7 /* Shabnam-Bold-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83412C812549F03200D14DA7 /* Shabnam-Bold-FD.ttf */; };
+		83412C872549F03200D14DA7 /* Shabnam-Medium-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83412C822549F03200D14DA7 /* Shabnam-Medium-FD.ttf */; };
+		83412C8C2549F23700D14DA7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C8B2549F23700D14DA7 /* UIFont.swift */; };
+		83412C9D254B3ABE00D14DA7 /* PriceCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */; };
+		83412C9E254B3ABE00D14DA7 /* PriceCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83412C532549CDE900D14DA7 /* Sarraf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarraf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83412C562549CDE900D14DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83412C582549CDE900D14DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83412C5A2549CDE900D14DA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83412C5D2549CDE900D14DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83412C5F2549CDEA00D14DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83412C622549CDEA00D14DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83412C642549CDEA00D14DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83412C7A2549EBFE00D14DA7 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		83412C7E2549F03200D14DA7 /* Shabnam-Thin-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Thin-FD.ttf"; sourceTree = "<group>"; };
+		83412C7F2549F03200D14DA7 /* Shabnam-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-FD.ttf"; sourceTree = "<group>"; };
+		83412C802549F03200D14DA7 /* Shabnam-Light-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Light-FD.ttf"; sourceTree = "<group>"; };
+		83412C812549F03200D14DA7 /* Shabnam-Bold-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Bold-FD.ttf"; sourceTree = "<group>"; };
+		83412C822549F03200D14DA7 /* Shabnam-Medium-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Medium-FD.ttf"; sourceTree = "<group>"; };
+		83412C8B2549F23700D14DA7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardViewCell.swift; sourceTree = "<group>"; };
+		83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCardViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,7 @@
 			children = (
 				83412C552549CDE900D14DA7 /* Sarraf */,
 				83412C542549CDE900D14DA7 /* Products */,
+				83412C7D2549F01900D14DA7 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +75,68 @@
 			children = (
 				83412C562549CDE900D14DA7 /* AppDelegate.swift */,
 				83412C582549CDE900D14DA7 /* SceneDelegate.swift */,
-				83412C5A2549CDE900D14DA7 /* ViewController.swift */,
-				83412C5C2549CDE900D14DA7 /* Main.storyboard */,
+				83412C8A2549F21300D14DA7 /* Extensions */,
+				83412C742549EAD200D14DA7 /* Controller */,
+				83412C732549EACC00D14DA7 /* View */,
+				83412C722549EAC200D14DA7 /* Model */,
 				83412C5F2549CDEA00D14DA7 /* Assets.xcassets */,
-				83412C612549CDEA00D14DA7 /* LaunchScreen.storyboard */,
 				83412C642549CDEA00D14DA7 /* Info.plist */,
 			);
 			path = Sarraf;
+			sourceTree = "<group>";
+		};
+		83412C722549EAC200D14DA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83412C732549EACC00D14DA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83412C5C2549CDE900D14DA7 /* Main.storyboard */,
+				83412C612549CDEA00D14DA7 /* LaunchScreen.storyboard */,
+				83412C9A254B3A8700D14DA7 /* Price Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83412C742549EAD200D14DA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83412C7A2549EBFE00D14DA7 /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83412C7D2549F01900D14DA7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83412C812549F03200D14DA7 /* Shabnam-Bold-FD.ttf */,
+				83412C7F2549F03200D14DA7 /* Shabnam-FD.ttf */,
+				83412C802549F03200D14DA7 /* Shabnam-Light-FD.ttf */,
+				83412C822549F03200D14DA7 /* Shabnam-Medium-FD.ttf */,
+				83412C7E2549F03200D14DA7 /* Shabnam-Thin-FD.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		83412C8A2549F21300D14DA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83412C8B2549F23700D14DA7 /* UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83412C9A254B3A8700D14DA7 /* Price Cell */ = {
+			isa = PBXGroup;
+			children = (
+				83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */,
+				83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */,
+			);
+			path = "Price Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +196,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83412C872549F03200D14DA7 /* Shabnam-Medium-FD.ttf in Resources */,
+				83412C832549F03200D14DA7 /* Shabnam-Thin-FD.ttf in Resources */,
+				83412C842549F03200D14DA7 /* Shabnam-FD.ttf in Resources */,
+				83412C862549F03200D14DA7 /* Shabnam-Bold-FD.ttf in Resources */,
+				83412C852549F03200D14DA7 /* Shabnam-Light-FD.ttf in Resources */,
 				83412C632549CDEA00D14DA7 /* LaunchScreen.storyboard in Resources */,
 				83412C602549CDEA00D14DA7 /* Assets.xcassets in Resources */,
+				83412C9E254B3ABE00D14DA7 /* PriceCardViewCell.xib in Resources */,
 				83412C5E2549CDE900D14DA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83412C5B2549CDE900D14DA7 /* ViewController.swift in Sources */,
+				83412C9D254B3ABE00D14DA7 /* PriceCardViewCell.swift in Sources */,
+				83412C8C2549F23700D14DA7 /* UIFont.swift in Sources */,
 				83412C572549CDE900D14DA7 /* AppDelegate.swift in Sources */,
+				83412C7B2549EBFE00D14DA7 /* MainController.swift in Sources */,
 				83412C592549CDE900D14DA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

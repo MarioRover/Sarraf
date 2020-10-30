@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Sarraf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QdL-qj-559">
+                                <rect key="frame" x="22" y="44" width="370" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcq-jI-VUu" userLabel="Title View">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VU-nF-yU6">
+                                                <rect key="frame" x="325.5" y="0.0" width="44.5" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2VU-nF-yU6" secondAttribute="trailing" id="N47-NK-uZo"/>
+                                            <constraint firstAttribute="bottom" secondItem="2VU-nF-yU6" secondAttribute="bottom" constant="22" id="UGB-7v-OGu"/>
+                                            <constraint firstItem="2VU-nF-yU6" firstAttribute="top" secondItem="pcq-jI-VUu" secondAttribute="top" id="dUN-0l-Omy"/>
+                                            <constraint firstItem="2VU-nF-yU6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pcq-jI-VUu" secondAttribute="leading" constant="20" symbolic="YES" id="dzP-kD-y7d"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oom-Br-CTo" userLabel="Cards View">
+                                        <rect key="frame" x="0.0" y="99" width="370" height="719"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-h2-fVA">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="719"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v5b-wJ-oUb">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PriceCardCell" id="fQN-Eb-2vE" customClass="PriceCardViewCell" customModule="Sarraf" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WYE-QY-9I2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mLE-h2-fVA" firstAttribute="top" secondItem="Oom-Br-CTo" secondAttribute="top" id="PEa-2z-EBX"/>
+                                            <constraint firstAttribute="bottom" secondItem="mLE-h2-fVA" secondAttribute="bottom" id="ZFW-aa-2gf"/>
+                                            <constraint firstAttribute="trailing" secondItem="mLE-h2-fVA" secondAttribute="trailing" id="eCx-Ap-vuW"/>
+                                            <constraint firstItem="mLE-h2-fVA" firstAttribute="leading" secondItem="Oom-Br-CTo" secondAttribute="leading" id="lqE-Ml-Myc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Oom-Br-CTo" firstAttribute="leading" secondItem="QdL-qj-559" secondAttribute="leading" id="Eub-xj-jBp"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oom-Br-CTo" secondAttribute="bottom" id="JfB-Jk-7XO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oom-Br-CTo" secondAttribute="trailing" id="YB1-ED-nxI"/>
+                                    <constraint firstItem="pcq-jI-VUu" firstAttribute="leading" secondItem="QdL-qj-559" secondAttribute="leading" id="e8Y-It-MRe"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcq-jI-VUu" secondAttribute="trailing" id="fmj-HV-ToE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QdL-qj-559" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FlT-xG-OeA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QdL-qj-559" secondAttribute="trailing" constant="22" id="QI6-wP-oyQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QdL-qj-559" secondAttribute="bottom" id="jwd-zM-vPK"/>
+                            <constraint firstItem="QdL-qj-559" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="lRa-x9-eEi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="mLE-h2-fVA" id="KGc-u1-tqa"/>
+                        <outlet property="titleLabel" destination="2VU-nF-yU6" id="H5A-h0-Nbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
