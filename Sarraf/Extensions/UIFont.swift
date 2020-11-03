@@ -20,11 +20,9 @@ extension UIFont {
             case .light:
                 return UIFont(name: "Shabnam-Light-FD", size: size)!
             case .thin, .ultraLight:
-                return UIFont(name: "Shabnam-This-FD", size: size)!
+                return UIFont(name: "Shabnam-Thin-FD", size: size)!
             default:
                 return UIFont(name: "Shabnam-FD", size: size)!
         }
     }
-    
 }
-

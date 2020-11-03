@@ -21,6 +21,8 @@
 		83412C8C2549F23700D14DA7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C8B2549F23700D14DA7 /* UIFont.swift */; };
 		83412C9D254B3ABE00D14DA7 /* PriceCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */; };
 		83412C9E254B3ABE00D14DA7 /* PriceCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */; };
+		834AD452254C73AC007F1E2B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AD451254C73AC007F1E2B /* Constant.swift */; };
+		8398933625519034002BE935 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398933525519034002BE935 /* CurrencyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		83412C8B2549F23700D14DA7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardViewCell.swift; sourceTree = "<group>"; };
 		83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCardViewCell.xib; sourceTree = "<group>"; };
+		834AD451254C73AC007F1E2B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8398933525519034002BE935 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +80,13 @@
 				83412C562549CDE900D14DA7 /* AppDelegate.swift */,
 				83412C582549CDE900D14DA7 /* SceneDelegate.swift */,
 				83412C8A2549F21300D14DA7 /* Extensions */,
+				8398933425519014002BE935 /* Services */,
 				83412C742549EAD200D14DA7 /* Controller */,
 				83412C732549EACC00D14DA7 /* View */,
 				83412C722549EAC200D14DA7 /* Model */,
 				83412C5F2549CDEA00D14DA7 /* Assets.xcassets */,
 				83412C642549CDEA00D14DA7 /* Info.plist */,
+				834AD451254C73AC007F1E2B /* Constant.swift */,
 			);
 			path = Sarraf;
 			sourceTree = "<group>";
@@ -95,9 +101,9 @@
 		83412C732549EACC00D14DA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8398932E25518F88002BE935 /* Component */,
 				83412C5C2549CDE900D14DA7 /* Main.storyboard */,
 				83412C612549CDEA00D14DA7 /* LaunchScreen.storyboard */,
-				83412C9A254B3A8700D14DA7 /* Price Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +143,22 @@
 				83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */,
 			);
 			path = "Price Cell";
+			sourceTree = "<group>";
+		};
+		8398932E25518F88002BE935 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				83412C9A254B3A8700D14DA7 /* Price Cell */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8398933425519014002BE935 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8398933525519034002BE935 /* CurrencyService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +241,9 @@
 				83412C8C2549F23700D14DA7 /* UIFont.swift in Sources */,
 				83412C572549CDE900D14DA7 /* AppDelegate.swift in Sources */,
 				83412C7B2549EBFE00D14DA7 /* MainController.swift in Sources */,
+				8398933625519034002BE935 /* CurrencyService.swift in Sources */,
 				83412C592549CDE900D14DA7 /* SceneDelegate.swift in Sources */,
+				834AD452254C73AC007F1E2B /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
