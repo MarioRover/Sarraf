@@ -10,6 +10,10 @@ import Foundation
 
 struct Constant {
     
+    struct Cell {
+        static let priceCard = "PriceCardViewCell"
+    }
+    
     struct Image {
         static let upArrowGreen = "up_arrow_green"
         static let downArrowRed = "down_arrow_red"

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,9 @@
 		83412C9E254B3ABE00D14DA7 /* PriceCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */; };
 		834AD452254C73AC007F1E2B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AD451254C73AC007F1E2B /* Constant.swift */; };
 		8398933625519034002BE935 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398933525519034002BE935 /* CurrencyService.swift */; };
+		839893632551D279002BE935 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 839893622551D279002BE935 /* Alamofire */; };
+		839893662551D3D0002BE935 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839893652551D3D0002BE935 /* CurrencyModel.swift */; };
+		839893692551DB7F002BE935 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839893682551DB7F002BE935 /* CurrencyResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,8 @@
 		83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCardViewCell.xib; sourceTree = "<group>"; };
 		834AD451254C73AC007F1E2B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		8398933525519034002BE935 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		839893652551D3D0002BE935 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		839893682551DB7F002BE935 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839893632551D279002BE935 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,7 @@
 		83412C722549EAC200D14DA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				839893652551D3D0002BE935 /* CurrencyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				8398933525519034002BE935 /* CurrencyService.swift */,
+				839893682551DB7F002BE935 /* CurrencyResponse.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,6 +185,9 @@
 			dependencies = (
 			);
 			name = Sarraf;
+			packageProductDependencies = (
+				839893622551D279002BE935 /* Alamofire */,
+			);
 			productName = Sarraf;
 			productReference = 83412C532549CDE900D14DA7 /* Sarraf.app */;
 			productType = "com.apple.product-type.application";
@@ -204,6 +215,9 @@
 				Base,
 			);
 			mainGroup = 83412C4A2549CDE900D14DA7;
+			packageReferences = (
+				839893612551D279002BE935 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 83412C542549CDE900D14DA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839893692551DB7F002BE935 /* CurrencyResponse.swift in Sources */,
 				83412C9D254B3ABE00D14DA7 /* PriceCardViewCell.swift in Sources */,
 				83412C8C2549F23700D14DA7 /* UIFont.swift in Sources */,
+				839893662551D3D0002BE935 /* CurrencyModel.swift in Sources */,
 				83412C572549CDE900D14DA7 /* AppDelegate.swift in Sources */,
 				83412C7B2549EBFE00D14DA7 /* MainController.swift in Sources */,
 				8398933625519034002BE935 /* CurrencyService.swift in Sources */,
@@ -445,6 +461,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		839893612551D279002BE935 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		839893622551D279002BE935 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 839893612551D279002BE935 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83412C4B2549CDE900D14DA7 /* Project object */;
 }
