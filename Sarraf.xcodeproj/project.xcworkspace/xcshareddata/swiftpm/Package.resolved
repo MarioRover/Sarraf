@@ -9,6 +9,15 @@
           "revision": "097e1f03166d49b31f824507fb85ad843b14fc13",
           "version": "5.3.0"
         }
+      },
+      {
+        "package": "SkeletonView",
+        "repositoryURL": "https://github.com/Juanpe/SkeletonView.git",
+        "state": {
+          "branch": null,
+          "revision": "46e2180c4b034c576928a9c331952c0147011050",
+          "version": "1.11.0"
+        }
       }
     ]
   },

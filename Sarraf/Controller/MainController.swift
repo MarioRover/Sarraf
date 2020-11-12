@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class MainController: UIViewController {
 
@@ -53,8 +54,8 @@ extension MainController: UICollectionViewDelegate, UICollectionViewDataSource, 
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PriceCardViewCell.identifier, for: indexPath) as! PriceCardViewCell
 
-        if let safeCurrenctState = currencyState.count > 0 ? currencyState : nil {
-            let currencyItem = safeCurrenctState[indexPath.row]
+        if !currencyState.isEmpty {
+            let currencyItem = currencyState[indexPath.row]
             
             cell.titlePrice.text = currencyItem.title
             cell.price.text      = "\(currencyItem.currentPrice) \(currencyItem.toCurrency)"
@@ -78,16 +79,36 @@ extension MainController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
 }
 
+// MARK: - Collection Skeleton
+
+extension MainController: SkeletonCollectionViewDataSource {
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionView.showAnimatedGradientSkeleton()
+    }
+    
+    func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return PriceCardViewCell.identifier
+    }
+    
+}
+
 // MARK: - CurrencyServiceDelegate
 
 extension MainController: CurrencyServiceDelegate {
     func didUpdateCurrencyList(_ currencyService: CurrencyService, currencyList: [CurrencyModel]) {
         
-        if currencyList.count > 0 {
+        if !currencyList.isEmpty {
+            
             DispatchQueue.main.async {
                 self.currencyState = currencyList
+                self.collectionView.stopSkeletonAnimation()
+                self.collectionView.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+                
                 self.collectionView.reloadData()
             }
+            
         } else {
             print("There is problem")
         }

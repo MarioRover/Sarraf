@@ -26,6 +26,7 @@
 		839893632551D279002BE935 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 839893622551D279002BE935 /* Alamofire */; };
 		839893662551D3D0002BE935 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839893652551D3D0002BE935 /* CurrencyModel.swift */; };
 		839893692551DB7F002BE935 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839893682551DB7F002BE935 /* CurrencyResponse.swift */; };
+		83BD7C54255DA6640086E1F4 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 83BD7C53255DA6640086E1F4 /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BD7C54255DA6640086E1F4 /* SkeletonView in Frameworks */,
 				839893632551D279002BE935 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +189,7 @@
 			name = Sarraf;
 			packageProductDependencies = (
 				839893622551D279002BE935 /* Alamofire */,
+				83BD7C53255DA6640086E1F4 /* SkeletonView */,
 			);
 			productName = Sarraf;
 			productReference = 83412C532549CDE900D14DA7 /* Sarraf.app */;
@@ -217,6 +220,7 @@
 			mainGroup = 83412C4A2549CDE900D14DA7;
 			packageReferences = (
 				839893612551D279002BE935 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				83BD7C52255DA6640086E1F4 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 83412C542549CDE900D14DA7 /* Products */;
 			projectDirPath = "";
@@ -471,6 +475,14 @@
 				minimumVersion = 5.3.0;
 			};
 		};
+		83BD7C52255DA6640086E1F4 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -478,6 +490,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 839893612551D279002BE935 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		83BD7C53255DA6640086E1F4 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83BD7C52255DA6640086E1F4 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
