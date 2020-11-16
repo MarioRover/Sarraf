@@ -24,4 +24,10 @@ struct Constant {
         static let greenChange   = "Green Change"
         static let redChange     = "Red Change"
     }
+    
+    struct CurrencyKind {
+        static let currency = "Currency"
+        static let gold     = "Gold"
+        static let virtual  = "Virtual"
+    }
 }

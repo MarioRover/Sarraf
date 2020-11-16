@@ -18,7 +18,7 @@ class CurrencyService {
     static let shared = CurrencyService()
     var delegate: CurrencyServiceDelegate?
     
-    func getList() {
+    func getList(responseType : String) {
         
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
@@ -42,7 +42,7 @@ class CurrencyService {
                     
                     do {
                         let currencyStruct = try JSONDecoder().decode(CurrencyStruct.self, from: data)
-                        let result = CurrencyResponse(currencyStruct: currencyStruct)
+                        let result = CurrencyResponse(currencyStruct: currencyStruct , responseType: responseType)
                         self.delegate?.didUpdateCurrencyList(self, currencyList: result.currencyStats)
                         
                     } catch {

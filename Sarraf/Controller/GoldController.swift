@@ -1,15 +1,14 @@
 //
-//  MainController.swift
+//  Gold.swift
 //  Sarraf
 //
-//  Created by Hossein Akbari on 8/7/1399 AP.
+//  Created by Hossein Akbari on 8/26/1399 AP.
 //
 
 import UIKit
 import SkeletonView
 
-class MainController: UIViewController {
-
+class GoldController: UIViewController {
     
     var currencyState = [CurrencyModel]()
     let screenSize = UIScreen.main.bounds.width
@@ -26,22 +25,18 @@ class MainController: UIViewController {
         
         collectionView.register(UINib(nibName: Constant.Cell.priceCard , bundle: nil), forCellWithReuseIdentifier: PriceCardViewCell.identifier)
         //
-        titleLabel.text = "نرخ ارزها"
+        titleLabel.text = "نرخ طلا و سکه"
         titleLabel.tintColor = .white
         titleLabel.font = UIFont.shabnam(size: 24, weight: .bold)
         
-        CurrencyService.shared.getList(responseType: Constant.CurrencyKind.currency)
-        
-        UITabBarItem.appearance()
-            .setTitleTextAttributes([NSAttributedString.Key.font : UIFont.shabnam(size: 11, weight: .bold)], for: .normal)
-        
+        CurrencyService.shared.getList(responseType: Constant.CurrencyKind.gold)
         
     }
 }
 
 // MARK: - CollectionView
 
-extension MainController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension GoldController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // FIXME: - Cell width is not responsive in small screen device
         return CGSize(width: 175, height: 133)
@@ -90,7 +85,7 @@ extension MainController: UICollectionViewDelegate, UICollectionViewDataSource, 
 
 // MARK: - Collection Skeleton
 
-extension MainController: SkeletonCollectionViewDataSource {
+extension GoldController: SkeletonCollectionViewDataSource {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -105,7 +100,7 @@ extension MainController: SkeletonCollectionViewDataSource {
 
 // MARK: - CurrencyServiceDelegate
 
-extension MainController: CurrencyServiceDelegate {
+extension GoldController: CurrencyServiceDelegate {
     func didUpdateCurrencyList(_ currencyService: CurrencyService, currencyList: [CurrencyModel]) {
         
         if !currencyList.isEmpty {
@@ -124,3 +119,4 @@ extension MainController: CurrencyServiceDelegate {
         
     }
 }
+

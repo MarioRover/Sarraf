@@ -21,6 +21,8 @@
 		83412C8C2549F23700D14DA7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C8B2549F23700D14DA7 /* UIFont.swift */; };
 		83412C9D254B3ABE00D14DA7 /* PriceCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */; };
 		83412C9E254B3ABE00D14DA7 /* PriceCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */; };
+		8342DEFB2562D01B005CBA19 /* GoldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342DEFA2562D01B005CBA19 /* GoldController.swift */; };
+		8342DEFE2562D02C005CBA19 /* ChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342DEFD2562D02C005CBA19 /* ChangeController.swift */; };
 		834AD452254C73AC007F1E2B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AD451254C73AC007F1E2B /* Constant.swift */; };
 		8398933625519034002BE935 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398933525519034002BE935 /* CurrencyService.swift */; };
 		839893632551D279002BE935 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 839893622551D279002BE935 /* Alamofire */; };
@@ -46,6 +48,8 @@
 		83412C8B2549F23700D14DA7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		83412C9B254B3ABE00D14DA7 /* PriceCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardViewCell.swift; sourceTree = "<group>"; };
 		83412C9C254B3ABE00D14DA7 /* PriceCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCardViewCell.xib; sourceTree = "<group>"; };
+		8342DEFA2562D01B005CBA19 /* GoldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldController.swift; sourceTree = "<group>"; };
+		8342DEFD2562D02C005CBA19 /* ChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeController.swift; sourceTree = "<group>"; };
 		834AD451254C73AC007F1E2B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		8398933525519034002BE935 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		839893652551D3D0002BE935 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				83412C7A2549EBFE00D14DA7 /* MainController.swift */,
+				8342DEFA2562D01B005CBA19 /* GoldController.swift */,
+				8342DEFD2562D02C005CBA19 /* ChangeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 				83412C572549CDE900D14DA7 /* AppDelegate.swift in Sources */,
 				83412C7B2549EBFE00D14DA7 /* MainController.swift in Sources */,
 				8398933625519034002BE935 /* CurrencyService.swift in Sources */,
+				8342DEFB2562D01B005CBA19 /* GoldController.swift in Sources */,
 				83412C592549CDE900D14DA7 /* SceneDelegate.swift in Sources */,
 				834AD452254C73AC007F1E2B /* Constant.swift in Sources */,
+				8342DEFE2562D02C005CBA19 /* ChangeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
