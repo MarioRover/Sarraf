@@ -12,7 +12,8 @@ class MainController: UIViewController {
 
     
     var currencyState = [CurrencyModel]()
-    let screenSize = UIScreen.main.bounds.width
+    let screenSize    = UIScreen.main.bounds.width
+    var refresher     : UIRefreshControl!
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -23,6 +24,18 @@ class MainController: UIViewController {
         collectionView.delegate   = self
         collectionView.dataSource = self
         CurrencyService.shared.delegate = self
+        // Collection Refresher
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(
+            string: "بروزرسانی اطلاعات",
+            attributes: [
+                .font: UIFont.shabnam(size: 12, weight: .light),
+                .foregroundColor: UIColor.white
+            ]
+        )
+        refresher.tintColor = .white
+        refresher.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
+        collectionView.refreshControl = refresher
         
         collectionView.register(UINib(nibName: Constant.Cell.priceCard , bundle: nil), forCellWithReuseIdentifier: PriceCardViewCell.identifier)
         //
@@ -36,6 +49,14 @@ class MainController: UIViewController {
             .setTitleTextAttributes([NSAttributedString.Key.font : UIFont.shabnam(size: 11, weight: .bold)], for: .normal)
         
         
+    }
+    
+    
+    @objc func refresh() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.collectionView.reloadData()
+            CurrencyService.shared.getList(responseType: Constant.CurrencyKind.currency)
+        }
     }
 }
 
@@ -114,7 +135,7 @@ extension MainController: CurrencyServiceDelegate {
                 self.currencyState = currencyList
                 self.collectionView.stopSkeletonAnimation()
                 self.collectionView.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
-                
+                self.refresher.endRefreshing()
                 self.collectionView.reloadData()
             }
             
